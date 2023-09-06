@@ -2,6 +2,8 @@ body {
     background-color: tan;
     font-family: arial;
     text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 a {
@@ -16,3 +18,8 @@ a:link {
 ul {
     text-align: left;
 }
+
+li {
+    margin-bottom: 5px;
+}
+
