@@ -2,8 +2,6 @@ body {
     background-color: tan;
     font-family: arial;
     text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 a {
@@ -22,4 +20,44 @@ ul {
 li {
     margin-bottom: 5px;
 }
+
+ol {
+    padding-left: 40%;
+    
+}
+
+ol li {
+    text-align: left;
+}
+
+/* Table styling */
+table {
+    overflow: hidden;
+    border-collapse: separate;
+    margin: 0px auto;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-spacing: 0;
+    border-radius: 10px;
+    width: 50%;
+    text-align: left;    
+}
+
+table th {
+    padding: 12px 0 12px 0;
+    background-color: rgb(180, 103, 48);
+}
+
+table td, table th {
+    padding: 8px;
+    border: 1px solid #6d6b6b;
+}
+
+table tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+ /* Form styling */
+
+
 
