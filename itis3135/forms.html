@@ -24,9 +24,55 @@
         <h2>Contact Form</h2>
         <h3>Please fill out this form with the required information</h3>
 
-        <form action="#">
-            
-        </form>        
+        <form action="#" method="post">
+            <fieldset class="personal">
+                <label for="#" class="">First Name: 
+                    <input type="text" required></label>
+                
+                <label for="#">Last Name: 
+                    <input type="text" required></label>
+                
+                <label for="#">Email: 
+                    <input type="text" required></label>
+                <label for="#">Phone Number: 
+                    <input type="text" required></label>
+            </fieldset>
+
+            <fieldset>
+                <label for="#">What class are you in? </label>
+                <label for="#"><input type="radio">ITSC 1212</label>
+                <label for="#"><input type="radio">ITSC 1213</label>
+                <label for="#"><input type="radio"> ITSC 2214</label>
+                <label for="#"><input type="radio"> ITIS 3135</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="#"> Are you an early bird or night owl?</label>
+                <label for="#"><input type="checkbox"> Early bird</label>
+                <label for="#"><input type="checkbox"> Night owl</label>
+                <label for="#"><input type="checkbox"> I'm not a bird</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="#">How did you hear about us? 
+                    <select name="source" id="dropdown">
+                        <option value="">(select one)</option>
+                        <option value="1">Website</option>
+                        <option value="2">Youtube Channel</option>
+                        <option value="3">Coworker</option>
+                        <option value="4">Advertisement</option>
+                        <option value="5">Web Search</option>
+                    </select>
+                </label>
+                <label for="message">Provide a message: </label>
+                <textarea name="message" id="message" cols="35" rows="7" placeholder="I just want to rant..."></textarea>
+                <label><input type="submit"></label>
+                <label><input type="reset"></label>
+            </fieldset>
+
+        </form> 
+        
+        
     </main>
 
     <footer>
