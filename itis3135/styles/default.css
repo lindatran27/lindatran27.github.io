@@ -11,12 +11,18 @@ a {
     padding: 3px;
 }
 
+a:hover {
+    color: rgb(255, 220, 194);
+}
+
 a:link {
     text-decoration: none;
 }
 
 ul {
     text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 li {
@@ -30,6 +36,11 @@ ol {
 
 ol li {
     text-align: left;
+}
+
+#contract {
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 /* Table styling */
@@ -59,24 +70,76 @@ table tr:nth-child(even) {
     background-color: #ddd;
 }
 
-
  /* Form styling */
-label {   
-    display: block;
-    border-style: none;
-    font-size: 17px;
-}
 
 form {
-    width: 50vw;
-    text-align: center;
-    white-space: nowrap;
-    margin: 0 auto;
+    display: inline-block;
+    background-color: blanchedalmond;
+    border: 5px solid rgb(180, 103, 48);
 }
 
-input[type=submit], input[type=reset] {
-    float: left;
+form ul {
+    margin-left: 10%;
+    margin-right: 10%;
+    list-style: none;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
 }
+
+form ul li input {
+    width: 120px;
+}
+
+/*Website Evaluations styling*/
+#we-main {
+    background-color: blanchedalmond;
+    margin-left: 25%;
+    max-width: 50vw;
+    padding-bottom: 2px;
+    border: 3px solid black;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#we-main > h2 {
+    padding-top: 1px;
+}
+
+.website {
+    margin-left: 7%;
+    text-align: left;
+}
+
+.website > a:hover {
+    color: rgb(247, 187, 144);
+}
+
+#we-main > p {
+    text-align: left;
+    margin-top: -15px;
+    margin-left: 7%;
+    margin-right: 4%;
+}
+
+#we-main > ul {
+    text-align: left;
+    margin-left: 7%;
+    margin-right: 9%;
+}
+
+/*CRAPPY WEBPAGE styling*/
+#hedgehog {
+    width: 400px;
+    height: 400px;
+}
+
+
+
+
+
+
 
 
  
