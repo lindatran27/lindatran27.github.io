@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linda Tran's Lucky Tiger || ITIS 3135 || BYO Input</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    
+    <main>
+        <h2>BYO Input</h2>
+        <p>Time to BYO Intro page, please fill out the form below so we can create your own page.</p>
+        
+        <form action="" id="form">
+            <ul>
+                <li>
+                    <label for="fname">First Name: </label>
+                    <input type="text" id="fname" required>                    
+                </li>
+                <li>
+                    <label for="mascot">Mascot: </label>
+                    <input type="text" id="mascot" r equired>                   
+                </li>
+                <li>
+                    <label for="image">Image: </label>
+                    <input type="file" id="image" name="file" id="introImage" required>
+                    <button type="button" onclick="loadImage()">CLICK HERE TO LOAD</button>
+                    <div id="loadImage">
+                    </div>
+                </li>
+                <li>
+                    <label for="icaption">Image Caption: </label>
+                    <input type="text" id="icaption">
+                </li>
+                <li>
+                    <label for="perback">Personal Background: </label>
+                    <input type="text" id="perback">
+                </li>
+                <li>
+                    
+                </li>
+            </ul>
+        </form>
+
+    </main>
+
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/survey.js"></script>
+</body>
+</html>

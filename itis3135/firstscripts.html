@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linda Tran's Lucky Tiger || ITIS 3135 || First Scripts</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <h2>First Scripts</h2>
+        <h3 id="de"></h3>
+
+        
+        <h3>Please fill out our form here: </h3>
+        <form action="" method="get">
+            <ul>
+                <li>
+                    <label for="name">What's your name? </label>
+                    <input type="text" id="name" name="name" required>
+                </li>
+                <li>
+                    <label for="feeling">How are you feeling? </label>
+                    <input type="text" id="feeling" name="feeling" required>
+                </li>
+                <li>
+                    <input type="button" onclick="greeting()" name="button" value="click me!">
+                </li>
+            </ul>
+        </form>
+
+        <h3 id="greet"></h3>
+
+        <form action="" method="get">
+            <ul>
+                <li>
+                    <label for="polyNum">Please input your favorite number that's from 0-10</label>
+                    <input id="polyNum" type="text" required>
+                </li>
+                <li>
+                    <input onclick="polygon()" type="button" name="button" value="click me!">
+                </li>
+            </ul>
+        </form>
+
+        <h3 id="p"></h3>
+
+        <button onclick="action1()">Click for a compliment</button>
+        <button onclick="action2()">Click me for an insult</button>
+        <button onclick="action3()">Want a question?</button>
+        <button onclick="action4()">Click for no fun</button>
+
+    </main>
+
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/defaultscripts.js"></script>
+</body>
+</html>
