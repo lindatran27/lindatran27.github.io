@@ -9,35 +9,64 @@
         body {
             background-color: olive;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+            margin-left: 15%;
+            margin-right: 15%;
         }
 
-        @media (min-width: 676px) {
-            section {
-            background-color: oldlace;
-            color: darkred;
-            height: 18vh;
-            width: 100%;
-            
-            }
+        h1 {
+           font-size: 38px;
+        }
 
         section h2 {
-            padding-left: 2vh;
-            margin-top: 2vh;
-            padding-top: 2%;
-            }
-        
-        section p {
-            padding-left: 2vh;
-            margin-top: -2%;
-            }    
+            font-size: 30px;
         }
 
         section {
             background-color: oldlace;
             color: darkred;
-            height: 18vh;
+            height: 100%;
             width: 100%;
+            text-align: center;
+            margin-bottom: 3%;
+            padding-bottom: 5px;
+        }
+
+
+        img {
+            width: 20%;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: beige;
+            background-color: orange;
+            border-radius: 10%;
+            padding: 6px;
+            margin: 5px;
             
+        }
+
+        nav a:hover {
+            background-color: rgb(255, 204, 109);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        footer {
+        margin-top: 5%;
+        text-align: center;
+        margin: -10px;
+        padding: 10px;
+        }
+
+        footer p, footer a {
+            color: beige;
+        }
+
+        
         
 
     </style>
@@ -45,35 +74,75 @@
 </head>
 <body>
     <div data-include="itis3135/components/header.html"></div>
+    <nav>
+        <h1>My Hobby</h1>
+        <a href="#aboutme">About Me</a>
+        <a href="#home">Home</a>
+        <a href="#seasons">Seasons</a>
+        <a href="#guide">Guide</a>
+    </nav>
 
     <main>
-        <h1>Midterm - Hobby</h1>
-        <p>This page will be about what my favorite hobby</p>
+        <p>This page will be about what my favorite hobby is!</p>
 
-        <section>
-            <h2>Who - About Me</h2>
-            <p>Hello! My name is Linda Tran and this is my hobby page.
-                I am currently a junior majoring in Computer Science.
-                My favorite hobby mainly is to play video games.
-                
+        <section id="home">
+                <h2>Home</h2>
+                <figure>
+                    <img src="images/1.png" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            <p>Welcome to my hobby page, come on in!</p>
+        </section>
+
+        <section id="aboutme">
+            <h2>About Me</h2>
+            <figure>
+                <img src="images/4.png" alt="">
+                <figcaption></figcaption>
+            </figure>
+            
+                <p>Hello! My name is Linda Tran and this is my hobby page.
+                    I am currently a junior majoring in Computer Science.
+                    My favorite hobby mainly is to play video games.</p>
+                <p>While I do not really play a lot of video games, there are
+                    a few that I enjoy playing from time to time such as Stardew
+                    Valley, Roblox, and Don't Starve Together!
+                </p>
+            
+        </section>
+
+        <section id="seasons">
+            <h2>Seasons</h2>
+            <figure>
+                <img src="images/5.png" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <p>You can play these games anytime during the year, as 
+                most events held in these games are season based.
             </p>
         </section>
 
-        <section>
-            <h2>What - Home</h2>
+        <section id="guide">
+            <h2>Guide</h2>
+            <figure>
+                <img src="images/6.png" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <p>You're mostly going to need a computer and download Steam
+                and Roblox to be able to play the games that I play.
+            </p>
         </section>
-
-        <section>
-            <h2>When - Schedule</h2>
-        </section>
-
-        <section>
-            <h2>Where - Guide</h2>
-        </section>
-        
     </main>
 
-    <div data-include="components/footer.html"></div>
-    <script src="scripts/include.js"></script>
+    <footer>
+        <p><a href="/itis3135/trandesigns.co/index.html">Tran Designs </a>&copy; 2023</p>
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+           </a>
+           <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+             </a>
+    </footer>
+
 </body>
 </html>

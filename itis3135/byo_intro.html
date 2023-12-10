@@ -13,35 +13,60 @@
         <h2>BYO Input</h2>
         <p>Time to BYO Intro page, please fill out the form below so we can create your own page.</p>
         
+
         <form action="" id="form">
-            <ul>
-                <li>
-                    <label for="fname">First Name: </label>
-                    <input type="text" id="fname" required>                    
-                </li>
-                <li>
-                    <label for="mascot">Mascot: </label>
-                    <input type="text" id="mascot" r equired>                   
-                </li>
-                <li>
-                    <label for="image">Image: </label>
-                    <input type="file" id="image" name="file" id="introImage" required>
-                    <button type="button" onclick="loadImage()">CLICK HERE TO LOAD</button>
-                    <div id="loadImage">
-                    </div>
-                </li>
-                <li>
-                    <label for="icaption">Image Caption: </label>
-                    <input type="text" id="icaption">
-                </li>
-                <li>
-                    <label for="perback">Personal Background: </label>
-                    <input type="text" id="perback">
-                </li>
-                <li>
-                    
-                </li>
-            </ul>
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" > 
+
+            <label for="mascot">Mascot: </label>
+            <input type="text" id="mascot" >
+
+            <label for="introImage">Add your image </label>
+            <input type="file" name="file" id="introImage" >
+            <button type="button" onclick="loadImage()">Click to load</button>
+            <div id="loadImage"></div>
+
+            <label for="icaption">Image Caption: </label>
+            <input type="text" id="icaption" >
+
+            <label for="perback">Personal Background: </label>
+            <input type="text" id="perback" >
+
+            <label for="proback">Professional Background: </label>
+            <input type="text" id="proback" >
+
+            <label for="acaback">Academic Background: </label>
+            <input type="text" id="acaback" >
+
+            <label for="wdback">Background in Web Development: </label>
+            <input type="text" id="wdback" >
+
+            <label for="">Primary Computer Platform: </label>
+            <input type="text">
+
+            <label for="c">Courses currently taking</label>
+            <input id="c" type="text">
+            <button onclick="addCourse()">Add</button>
+            <div id="courses"></div>
+
+
+
+            <label for="">Funny thing? </label>
+            <input type="text">
+
+            <label for="">Anything else? </label>
+            <input type="text">
+
+            <section id="checkboxSection">
+                <input type="checkbox" id ="checkbox">
+                <label for="checkbox">I understand that what is on this page is not password
+                    protected and I will not put anything here that I don't
+                    want publicly available.</label>
+            </section>
+
+            <input type="submit">
+            <input type="reset">
+
         </form>
 
     </main>

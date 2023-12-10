@@ -4,18 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linda Tran's Lucky Tiger || ITIS 3135 || Home</title>
-    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/test.css">
 </head>
 <body>
     <div data-include="components/header.html"></div>
 
     <main>
-        <h2>Home</h2>
-        <p>This is all the content for my ITIS 3135 class</p>
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+            <input type="submit" value="Submit">
+          </form>
+
+          <form action="#">
+            <div id="courses">
+              <input type="text">
+            </div>
+            <button onclick="addCourse()">Add</button>
+            <button onclick="removeCourse()">Delete</button>
+          </form>
+
+
+          <form id="printout">
+            <label for="textbox">Enter some stuff</label>
+            <input id="textbox" type="text">
+            <button onclick="hide()">Click me</button>
+          </form>
+
+          <div id="replacePrintout">
+            <p id="output"></p>
+          </div>
         
     </main>
 
     <div data-include="components/footer.html"></div>
     <script src="scripts/include.js"></script>
+    <script src="scripts/test.js"></script>
 </body>
 </html>

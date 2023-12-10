@@ -19,26 +19,8 @@ a:link {
     text-decoration: none;
 }
 
-ul {
+p {
     text-align: left;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-li {
-    margin-bottom: 5px;
-}
-
-ol {
-    padding-left: 40%;
-    
-}
-
-ol li {
-    text-align: left;
-}
-
-#contract {
     margin-left: 30%;
     margin-right: 30%;
 }
@@ -70,29 +52,62 @@ table tr:nth-child(even) {
     background-color: #ddd;
 }
 
- /* Form styling */
-
-form {
-    display: inline-block;
-    background-color: blanchedalmond;
-    border: 5px solid rgb(180, 103, 48);
-}
-
-form ul {
+ul {
+    text-align: left;
     margin-left: 10%;
     margin-right: 10%;
-    list-style: none;
-    font-size: 18px;
-    text-align: left;
-    padding-left: 5px;
-    padding-right: 5px;
 }
 
-form ul li input {
-    width: 120px;
+li {
+    margin-bottom: 5px;
 }
+
+ol {
+    padding-left: 40%;
+    
+}
+
+ol li {
+    text-align: left;
+}
+
+
+ /* Form styling */
+
+ form {
+    padding: 2%;
+    margin-top: -25px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 5px;
+}
+
+input[type=text], select {
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 12px 20px;
+}
+
+label {
+    float: left;
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+
+#checkboxSection {
+    margin-top: 5px;
+    font-size: 14px;
+    display: flex;
+}
+
+.textbox {
+    height: 200px;
+}
+
 
 /*Website Evaluations styling*/
+
 #we-main {
     background-color: blanchedalmond;
     margin-left: 25%;
@@ -135,6 +150,225 @@ form ul li input {
     height: 400px;
 }
 
+/*Slideshow Gallery*/
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: brown;
+    font-size: 18px;
+    padding: 8px 200px;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    background-color: #222;
+    padding: 2px 200px;
+    color: white;
+    width: 20%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    display: flex;
+    justify-content: center;
+    float: left;
+    margin-left: 2.5%;
+    width: 30%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  div img {
+    width: 35%;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+  }
+
+  div p {
+    text-align: center;
+  }
+
+
+/*CALCULATOR TRY*/  
+#calc-output {
+    width: 50%;
+}
+
+.calc-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 30%;
+    margin-right: 35%;
+    padding: 5%;
+    width: 25%;
+    text-align: center;
+    font-size: 25
+}
+
+.calc-container button {
+    margin: 2px;
+    font-size: 100%;
+}
+
+
+/*Calculator FCC*/
+.container {
+    max-width: 20em;
+  }
+  
+  .container > p {
+    text-align: center;
+  }
+  
+  .calculator {
+    border-radius: 12px;
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    max-width: 15em;
+    overflow: hidden;
+  }
+  
+  .calculator__display {
+    background-color: #222222;
+    color: #fff;
+    font-size: 1.714285714em;
+    padding: 0.5em 0.75em;
+    text-align: right;
+  }
+  
+  .calculator__keys {
+    background-color: #999;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .calculator__keys > * {
+    background-color: #fff;
+    padding: 0.5em 1.25em;
+    position: relative;
+    text-align: center;
+  }
+  
+  .calculator__keys > *:active::before,
+  .calculator__keys > .is-depressed::before {
+    background-color: rgba(0, 0, 0, 0.2);
+    bottom: 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+    content: "";
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .key--operator {
+    background-color: #eee;
+  }
+  
+  .key--equal {
+    background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+    grid-column: -2;
+    grid-row: 2 / span 4;
+  }
+
+/* footer */
+footer p {
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background-color: lightblue;
+    }
+
+    img {
+        width: 60%;
+    }
+
+    p {
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+
+}
+
+
+@media screen and (max-width: 576px) {
+    body {
+        background-color: pink;
+    }
+
+    img {
+        width: 60%;
+    }
+
+    p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
 
 
 
