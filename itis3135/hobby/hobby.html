@@ -30,6 +30,8 @@
             text-align: center;
             margin-bottom: 3%;
             padding-bottom: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
         }
 
 
@@ -55,6 +57,22 @@
             text-decoration: none;
         }
 
+        #home {
+            display: block;
+        }
+
+        #aboutme {
+            display: none;
+        }
+
+        #seasons {
+            display: none;
+        }
+
+        #guide {
+            display: none;
+        }
+
         footer {
         margin-top: 5%;
         text-align: center;
@@ -65,27 +83,23 @@
         footer p, footer a {
             color: beige;
         }
-
-        
-        
-
     </style>
-
 </head>
+
+
 <body>
-    <div data-include="itis3135/components/header.html"></div>
     <nav>
         <h1>My Hobby</h1>
-        <a href="#aboutme">About Me</a>
-        <a href="#home">Home</a>
-        <a href="#seasons">Seasons</a>
-        <a href="#guide">Guide</a>
+        <a href="#" onclick="hideSection('aboutme')">About Me</a>
+        <a href="#" onclick="hideSection('home')">Home</a>
+        <a href="#" onclick="hideSection('seasons')">Seasons</a>
+        <a href="#" onclick="hideSection('guide')">Guide</a>
     </nav>
 
     <main>
         <p>This page will be about what my favorite hobby is!</p>
 
-        <section id="home">
+        <section id="home" class="section" >
                 <h2>Home</h2>
                 <figure>
                     <img src="images/1.png" alt="">
@@ -94,7 +108,7 @@
             <p>Welcome to my hobby page, come on in!</p>
         </section>
 
-        <section id="aboutme">
+        <section id="aboutme" class="section">
             <h2>About Me</h2>
             <figure>
                 <img src="images/4.png" alt="">
@@ -111,7 +125,7 @@
             
         </section>
 
-        <section id="seasons">
+        <section id="seasons" class="section">
             <h2>Seasons</h2>
             <figure>
                 <img src="images/5.png" alt="">
@@ -122,7 +136,7 @@
             </p>
         </section>
 
-        <section id="guide">
+        <section id="guide" class="section">
             <h2>Guide</h2>
             <figure>
                 <img src="images/6.png" alt="">
@@ -143,6 +157,8 @@
             <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
              </a>
     </footer>
+
+    <script src="scripts/scripts.js"></script>
 
 </body>
 </html>

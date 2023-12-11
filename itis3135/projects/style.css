@@ -32,9 +32,6 @@ a {
     color: slategray;
 }
 
-main {
-    margin-bottom: 5%;
-}
 
 
 #indexmain {
@@ -43,15 +40,19 @@ main {
 }
 
 #nailhero {
-    width: 55%;
+    width: 40%;
     margin: 2%;
 }
 
+
 #homeText {
-    margin-left: 22.5%;
-    margin-right: 20%;
-    margin-top: -2%;
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: -3%;
+    margin-bottom: 2%;
 }
+
 
 
 /*Services Styling*/
@@ -62,21 +63,54 @@ main h2{
 
 table {
     display: flex;
-    justify-content: center;
+    margin-left: 43%;
     text-align: left;
+    margin-bottom: 2%;
 }
 
 
 
 /*Gallery Styling*/
 #gallerymain {
-    position: relative;
-    padding-left: 25%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 6%;
+    text-align: left;
 }
 
-#gallerymain img {
-    width: 30%;
-    margin: 2%;
+#gallerymain section {
+    margin-top: 5%;
+}
+
+#gallerymain h2 {
+    text-align: left;
+    font-size: 28px;
+}
+
+.slide {
+    display: none;
+    
+}
+
+.slideshow .slide img {
+    width: 60%;
+    margin-left: 15%;
+}
+
+
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 
@@ -84,23 +118,27 @@ table {
 #aboutmain {
     display: flex;
     justify-content: center;
-    padding-left: 20%;
-    padding-right: 20%;
-    font-size: 18px;
-    margin-top: 1.5%;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 12%;
+    text-align: left;
 }
 
 #hanh {
-    height: 40%;
-    width: 40%;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 2%;
-    margin-top: 2.5%;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    margin-top: 2%;
+    margin-right: 5%;
 }
 
 #aboutmain section p {
-    margin-top: 20%;
+    margin-right: 5%;
+}
+
+#aboutmain section h2 {
+    text-align: left;
 }
 
 
@@ -135,6 +173,31 @@ form div input, form div select ,form div textarea {
     box-sizing: content-box;
 }
 
+#contactmain #submitted {
+    display: none;
+    background-color: lightgrey;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 3%;
+}
+
+#contactmain #submitted p {
+    padding: 5%;
+}
+
+#contactmain #submitted img {
+    width: 80%;
+    height: 20%;
+    margin-left: 10%;
+    margin-top: -5%;
+    margin-bottom: 3%;
+}
+
+#contactmain #submitted button {
+    margin-left: 42%;
+    font-size: 17px;
+    margin-bottom: 3%;
+}
 
 
 /*footer styling*/
@@ -149,7 +212,7 @@ footer {
 
 
 
-/*media queries*/
+/*media queries
 @media screen and (max-width: 1500px) {
     main {
         position:relative;
@@ -164,8 +227,8 @@ footer {
 
 @media screen and (max-width: 1000px) {
     img {
-        height: 80%;
-        width: 80%;
+        height: 60%;
+        width: 60%;
     }
 
 
@@ -185,11 +248,12 @@ footer {
     }
 
     img {
-        height: 80%;
-        width: 80%;
+        height: 60%;
+        width: 60%;
     }
 
 }
+
 
 
 /*

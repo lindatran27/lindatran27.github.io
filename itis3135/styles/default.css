@@ -333,6 +333,17 @@ label {
     grid-row: 2 / span 4;
   }
 
+
+
+/*Peer Review 1*/
+#pr1 {
+  width: 50%;
+}
+
+
+
+
+
 /* footer */
 footer p {
     text-align: center;
