@@ -54,7 +54,7 @@ table tr:nth-child(even) {
 
 ul {
     text-align: left;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-right: 10%;
 }
 
@@ -62,10 +62,6 @@ li {
     margin-bottom: 5px;
 }
 
-ol {
-    padding-left: 40%;
-    
-}
 
 ol li {
     text-align: left;
@@ -340,7 +336,9 @@ label {
   width: 50%;
 }
 
-
+#list1 {
+  margin-left: 30%;
+}
 
 
 
